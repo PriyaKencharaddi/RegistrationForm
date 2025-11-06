@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<div class="container mt-5">
+    <h2 class="mb-4">Registration Form</h2>
+
+    <form action="register.php" method="POST" enctype="multipart/form-data">
+        <!-- 1. Full Name -->
+        <div class="mb-3">
+            <label for="full_name" class="form-label">Full Name</label>
+            <input type="text" name="full_name" class="form-control" required>
+        </div>
+
+        <!-- 2. Email -->
+        <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" name="email" class="form-control" required>
+        </div>
+
+        <!-- 3. Password -->
+        <div class="mb-3">
+            <label for="password" class="form-label">Password</label>
+            <input type="password" name="password" class="form-control" required>
+        </div>
+
+        <!-- 4. Phone -->
+        <div class="mb-3">
+            <label for="phone" class="form-label">Phone</label>
+            <input type="text" name="phone" class="form-control">
+        </div>
+
+        <!-- 5. Date of Birth -->
+        <div class="mb-3">
+            <label for="dob" class="form-label">Date of Birth</label>
+            <input type="date" name="dob" class="form-control">
+        </div>
+
+        <!-- 6. Gender -->
+        <div class="mb-3">
+            <label class="form-label">Gender</label>
+            <select name="gender" class="form-select">
+                <option value="">Select</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+            </select>
+        </div>
+
+        <!-- 7. Address -->
+        <div class="mb-3">
+            <label for="address" class="form-label">Address</label>
+            <textarea name="address" class="form-control" rows="2"></textarea>
+        </div>
+
+        <!-- 8. City -->
+        <div class="mb-3">
+            <label for="city" class="form-label">City</label>
+            <input type="text" name="city" class="form-control">
+        </div>
+
+        <!-- 9. State -->
+        <div class="mb-3">
+            <label for="state" class="form-label">State</label>
+            <input type="text" name="state" class="form-control">
+        </div>
+
+        <!-- 10. Country -->
+        <div class="mb-3">
+            <label for="country" class="form-label">Country</label>
+            <input type="text" name="country" class="form-control">
+        </div>
+
+        <!-- 11. Hobbies -->
+        <div class="mb-3">
+            <label for="hobbies" class="form-label">Hobbies</label>
+            <input type="text" name="hobbies" class="form-control" placeholder="Separate with commas">
+        </div>
+
+        <!-- 12. Profile Image -->
+        <div class="mb-3">
+            <label for="profile_image" class="form-label">Profile Image</label>
+            <input type="file" name="profile_image" class="form-control" accept="image/*">
+        </div>
+
+        <!-- 13. Resume / File Upload (image, PDF, DOCX) -->
+        <div class="mb-3">
+            <label for="resume_file" class="form-label">Upload File (Image, PDF, DOCX)</label>
+            <input type="file" name="resume_file" class="form-control" accept=".pdf,.docx,image/*">
+        </div>
+
+        <!-- 14. Extra Field 1 -->
+        <div class="mb-3">
+            <label for="linkedin" class="form-label">Linkedin link</label>
+            <input type="url" name="Linkedin link" class="form-control">
+        </div>
+
+        <!-- 15. Extra Field 2 -->
+        <div class="mb-3">
+            <label for="github" class="form-label">Github link</label>
+            <input type="url" name="Github link" class="form-control">
+        </div>
+
+        <button type="submit" class="btn btn-primary">Register</button>
+    </form>
+
+    <hr>
+
+    <!-- Link to view users -->
+    <div class="mt-3">
+        <a href="users.php" class="btn btn-success">View All Users</a>
+    </div>
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
